@@ -1,1 +1,1 @@
-SELECT * from student WHERE name="Moksh";
+ALTER table student drop column email;
