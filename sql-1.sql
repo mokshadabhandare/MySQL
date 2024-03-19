@@ -13,4 +13,3 @@ SELECT * from student where marks>80;
 SELECT * from student WHERE name="Moksh";
 
 ALTER table student drop column email;
-ALTER table student drop column email;
