@@ -1,1 +1,1 @@
-ALTER table student drop column email;
+SELECT * from student;
