@@ -23,3 +23,22 @@ join student on teacher.student_id = student.id where student.class="MCA";
 
 select teacher.id, teacher.name , teacher.subject , teacher.department from teacher
 join student on teacher.student_id = student.id where student.class="B.tech";
+
+ALTER TABLE student add column marks varchar(50);
+
+update student set marks=45 where id=1;
+update student set marks=40 where id=2;
+update student set marks=50 where id=3;
+
+delete from teacher where id=3;
+
+select * from student where marks=50;
+
+select * from teacher where subject="DBMS";
+
+select * from student where marks=45;
+
+select subject from teacher where id=1;
+
+select name from teacher where department="Dept of IT" ;
+
