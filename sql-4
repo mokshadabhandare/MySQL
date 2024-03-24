@@ -1,0 +1,23 @@
+
+select distinct * from student;
+
+select distinct batch from student;
+
+select distinct name from student;
+
+
+SELECT * FROM student WHERE name LIKE 'A%';
+
+USE college
+SELECT * FROM student WHERE name LIKE '%A';
+
+SELECT * FROM student WHERE name LIKE 'C%';
+
+SELECT * FROM student WHERE name LIKE '_k%';
+
+SELECT * FROM student WHERE name LIKE 'A%h';
+
+
+SELECT * FROM student WHERE batch IN(2021);
+
+SELECT * FROM student WHERE id IN(1,2,3);
