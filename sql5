@@ -1,0 +1,27 @@
+
+SELECT batch from student where marks>80 GROUP BY batch;
+
+SELECT batch,AVG(marks) from student GROUP BY batch;
+
+SELECT name,AVG(marks) from student GROUP BY name;
+
+SELECT id,AVG(marks) from student GROUP BY id;
+
+SELECT batch,name,Avg(marks) from student GROUP BY batch,name;
+
+SELECT batch,name,Max(marks) from student GROUP BY batch,name;
+
+SELECT id,marks, (SELECT AVG(marks) from student) from student;
+
+SELECT id,marks, (SELECT AVG(marks) from student) from student GROUP BY id,marks;
+
+SELECT batch ,avg(marks) FROM student GROUP BY batch HAVING AVG(marks)>60;
+
+SELECT batch , count(*) from student GROUP BY batch ORDER BY count(*) DESC;
+
+SELECT name , count(*) from student GROUP BY name ORDER BY count(*) DESC;
+
+SELECT class , count(*) from student GROUP BY class ORDER BY count(*) ASC;
+
+SELECT name,AVG(marks) from student GROUP BY name ORDER BY AVG(marks) ASC;
+
