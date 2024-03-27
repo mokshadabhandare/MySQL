@@ -42,3 +42,5 @@ select subject from teacher where id=1;
 
 select name from teacher where department="Dept of IT" ;
 
+delete from student where  marks>80;
+
