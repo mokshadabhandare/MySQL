@@ -1,0 +1,3 @@
+USE college;
+INSERT into student(id,name,class,batch,marks)values(4,"Ciya","MBA",2021,87);
+
