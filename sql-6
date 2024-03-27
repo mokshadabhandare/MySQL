@@ -1,0 +1,20 @@
+USE college;
+GRANT select on teacher to Kiran;
+
+GRANT select(class) on student to Anjali;
+
+GRANT select,UPDATE on student to Ciya;
+
+REVOKE select,UPDATE on student from Ciya;
+
+start transaction;
+use college;
+
+INSERT into student(id,name,class,batch,marks)values
+                   (5,"Moksh","B.Arch",2024,75);
+
+
+start transaction;
+update student set marks=85 where id=5;
+rollback;
+commit;
