@@ -39,3 +39,11 @@ INSERT into order1(id,odate,customer1_id)values(101,"20-03-2024",3),
                                              (102,"15-02-2024",1),
                                              (103,"08-01-2024",2);  
 
+
+SELECT customer1_id from customer1 INNER JOIN order1 on customer1.id=order1.customer1_id;
+
+
+SELECT customer1_id from customer1 LEFT JOIN order1 on customer1.id=order1.customer1_id;
+
+
+SELECT customer1_id from customer1 RIGHT JOIN order1 on customer1.id=order1.customer1_id;
