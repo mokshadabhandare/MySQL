@@ -1,1 +1,1 @@
-SELECT student_id from student self JOIN teacher on student.id=teacher.id;
+SELECT student.name,teacher.name from student cross join teacher;

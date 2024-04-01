@@ -63,3 +63,7 @@ SELECT student_id from student RIGHT JOIN teacher on student.id=teacher.id;
 SELECT student_id from student RIGHT OUTER JOIN teacher on student.id=teacher.id;
 
 SELECT student_id from student LEFT OUTER JOIN teacher on student.id=teacher.id;
+
+SELECT student.name from student cross join teacher;
+
+SELECT student.name,teacher.name from student cross join teacher;
