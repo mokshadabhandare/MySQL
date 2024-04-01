@@ -1,1 +1,1 @@
-SELECT student.name,teacher.name from student cross join teacher;
+SELECT name from student UNION SELECT name from teacher;

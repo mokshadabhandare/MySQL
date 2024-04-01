@@ -67,3 +67,9 @@ SELECT student_id from student LEFT OUTER JOIN teacher on student.id=teacher.id;
 SELECT student.name from student cross join teacher;
 
 SELECT student.name,teacher.name from student cross join teacher;
+
+SELECT t1.name from teacher as t1 join teacher as t2 on t1.name=t2.name;
+
+SELECT t1.name AS teach, t2.name as teach2 from teacher as t1 join teacher as t2 on t1.student_id=t2.id;
+
+SELECT name from student UNION SELECT name from teacher;
