@@ -44,3 +44,22 @@ select name from teacher where department="Dept of IT" ;
 
 delete from student where  marks>80;
 
+
+use college;
+alter TABLE student add column subject varchar(50);
+
+update student set subject="Maths" where id=1;
+update student set subject="Computer Science" where id=2;
+update student set subject="DBMS" where id=3;
+
+SELECT student_id from student INNER JOIN teacher on student.id=teacher.student_id;
+
+SELECT student_id from student INNER JOIN teacher on student.id=teacher.id;
+
+SELECT student_id from student LEFT JOIN teacher on student.id=teacher.id;
+
+SELECT student_id from student RIGHT JOIN teacher on student.id=teacher.id;
+
+SELECT student_id from student RIGHT OUTER JOIN teacher on student.id=teacher.id;
+
+SELECT student_id from student LEFT OUTER JOIN teacher on student.id=teacher.id;
