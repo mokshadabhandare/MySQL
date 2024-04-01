@@ -77,3 +77,8 @@ SELECT name from student UNION SELECT name from teacher;
 SELECT id from student UNION SELECT subject from teacher;
 
 SELECT name from student intersect select name from teacher;
+
+SELECT name from student except select name from teacher;
+
+SELECT name from student union ALL
+select name from teacher;

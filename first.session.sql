@@ -1,1 +1,0 @@
-SELECT name from student except select name from teacher;
