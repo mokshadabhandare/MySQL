@@ -1,2 +1,2 @@
 
-SELECT customer1_id from customer1 RIGHT JOIN order1 on customer1.id=order1.id;
+SELECT customer1.id from customer1 FULL OUTER JOIN order1 ON customer1.id=order1.id;
