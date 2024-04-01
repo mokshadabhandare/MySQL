@@ -1,1 +1,1 @@
-SELECT name from student UNION SELECT name from teacher;
+SELECT name from student except select name from teacher;

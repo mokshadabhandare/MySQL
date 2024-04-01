@@ -73,3 +73,7 @@ SELECT t1.name from teacher as t1 join teacher as t2 on t1.name=t2.name;
 SELECT t1.name AS teach, t2.name as teach2 from teacher as t1 join teacher as t2 on t1.student_id=t2.id;
 
 SELECT name from student UNION SELECT name from teacher;
+
+SELECT id from student UNION SELECT subject from teacher;
+
+SELECT name from student intersect select name from teacher;
