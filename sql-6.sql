@@ -48,5 +48,6 @@ SELECT customer1_id from customer1 LEFT JOIN order1 on customer1.id=order1.custo
 
 SELECT customer1_id from customer1 RIGHT JOIN order1 on customer1.id=order1.customer1_id;
 
+SELECT name from student intersect select name from teacher;
 
 SELECT customer1_id from customer1 RIGHT OUTER JOIN order1 on customer1.id=order1.id;
