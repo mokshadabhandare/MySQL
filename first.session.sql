@@ -1,2 +1,7 @@
 
-SELECT name from student intersect select name from teacher;
+
+
+SELECT *
+FROM student
+INNER JOIN teacher ON student.id = teacher.id;
+
